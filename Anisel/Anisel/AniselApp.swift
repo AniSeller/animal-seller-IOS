@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 @main
 struct AniselApp: App {
     var body: some Scene {

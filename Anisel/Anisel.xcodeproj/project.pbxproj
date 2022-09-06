@@ -11,6 +11,9 @@
 		DEC36C3828C7CE0400E3AA50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC36C3728C7CE0400E3AA50 /* ContentView.swift */; };
 		DEC36C3A28C7CE0700E3AA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC36C3928C7CE0700E3AA50 /* Assets.xcassets */; };
 		DEC36C3D28C7CE0700E3AA50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC36C3C28C7CE0700E3AA50 /* Preview Assets.xcassets */; };
+		DEC36C4628C7CFC500E3AA50 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC36C4528C7CFC500E3AA50 /* Post.swift */; };
+		DEC36C4928C7D03200E3AA50 /* AnimalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC36C4828C7D03200E3AA50 /* AnimalInfo.swift */; };
+		DEC36C4B28C7D09C00E3AA50 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC36C4A28C7D09C00E3AA50 /* Gender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		DEC36C3728C7CE0400E3AA50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEC36C3928C7CE0700E3AA50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEC36C3C28C7CE0700E3AA50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEC36C4528C7CFC500E3AA50 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DEC36C4828C7D03200E3AA50 /* AnimalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfo.swift; sourceTree = "<group>"; };
+		DEC36C4A28C7D09C00E3AA50 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		DEC36C3428C7CE0400E3AA50 /* Anisel */ = {
 			isa = PBXGroup;
 			children = (
+				DEC36C4728C7D01200E3AA50 /* Types */,
 				DEC36C4428C7CF4600E3AA50 /* Pages */,
 				DEC36C4328C7CF3A00E3AA50 /* Components */,
 				DEC36C3528C7CE0400E3AA50 /* AniselApp.swift */,
@@ -72,6 +79,7 @@
 		DEC36C4328C7CF3A00E3AA50 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEC36C4528C7CFC500E3AA50 /* Post.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -81,6 +89,15 @@
 			children = (
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		DEC36C4728C7D01200E3AA50 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				DEC36C4828C7D03200E3AA50 /* AnimalInfo.swift */,
+				DEC36C4A28C7D09C00E3AA50 /* Gender.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC36C4628C7CFC500E3AA50 /* Post.swift in Sources */,
+				DEC36C4B28C7D09C00E3AA50 /* Gender.swift in Sources */,
+				DEC36C4928C7D03200E3AA50 /* AnimalInfo.swift in Sources */,
 				DEC36C3828C7CE0400E3AA50 /* ContentView.swift in Sources */,
 				DEC36C3628C7CE0400E3AA50 /* AniselApp.swift in Sources */,
 			);

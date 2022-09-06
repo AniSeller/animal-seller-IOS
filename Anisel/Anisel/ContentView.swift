@@ -11,6 +11,11 @@ struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
+        
+        
+            Post(title: "Lena", info: AnimalInfo(breed: "British short hair cat", age: 1.5, gender: Gender.Female))
+           
+        
     }
 }
 
