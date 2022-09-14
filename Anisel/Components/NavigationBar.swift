@@ -9,17 +9,31 @@ import Foundation
 import SwiftUI
 
 struct NavigationBar : View {
-   
+
+    var selection : NavigationBarElement;
+    
     var body: some View {
         HStack{
-            Image("HomeIconActive")
-                .padding(.trailing, 28)
-            Image("DialogsIcon")
-                .padding(.trailing, 28)
-            Image("NotificationsIcon")
-                .padding(.trailing, 28)
-            Image("ProfileIcon")
+            NavigationLink(destination: MainPage()){
+                Image("HomeIcon" + (selection == NavigationBarElement.Main ? "Active" : ""))
+                    .padding(.trailing, 28)
+            }
+            
 
+            NavigationLink(destination: DialogsPage()){
+                Image("DialogsIcon" + (selection == NavigationBarElement.Dialogs ? "Active" : ""))
+                    .padding(.trailing, 28)
+            }
+
+            NavigationLink(destination: NotificationsPage()){
+                Image("NotificationsIcon"  + (selection == NavigationBarElement.Notifications ? "Active" : ""))
+                    .padding(.trailing, 28)
+            }
+            
+            NavigationLink(destination: ProfilePage()){
+                Image("ProfileIcon" + (selection == NavigationBarElement.Profile ? "Active" : ""))
+
+            }
         }
         .padding(.horizontal, 37)
         .padding(.vertical, 18)
@@ -32,7 +46,7 @@ struct NavigationBar : View {
 struct NavigationBar_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            NavigationBar()
+            NavigationBar(selection: .Notifications)
             
         }
     }

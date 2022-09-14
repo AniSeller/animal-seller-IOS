@@ -8,25 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        
-        VStack{
-            TopBar();
-            ZStack(alignment: .center){
-                VStack(){
-                    Post(title: "Lena", info: AnimalInfo(breed: "British short hair cat", age: 1.5, gender: Gender.Female))
-                    Post(title: "Lena", info: AnimalInfo(breed: "British short hair cat", age: 1.5, gender: Gender.Female))
-                    Post(title: "Lena", info: AnimalInfo(breed: "British short hair cat", age: 1.5, gender: Gender.Female))
-                }
-                
-                NavigationBar()
-                    .frame(maxHeight: .infinity, alignment: .bottom)
-            }
 
+    var screenY = UIScreen.main.bounds.size.height;
+
+    init(){
+        UINavigationBar.setAnimationsEnabled(false)
+    }
+    
+    var body: some View {
+            NavigationView{
+                MainPage()
+                    .frame(height: screenY , alignment: Alignment.top)
+
+            }
         }
+
         
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

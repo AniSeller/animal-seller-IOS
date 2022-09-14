@@ -10,15 +10,16 @@ import SwiftUI
 struct TopBar: View {
     
     var screenX = UIScreen.main.bounds.width;
-    
+    var title : String;
     var body: some View {
         ZStack{
-            Text("Главная")
+            Text(title)
                 .font(Font.title3)
                 .fontWeight(Font.Weight.black)
                 .padding(.leading, 30)
-                .frame(width: screenX, alignment: .leading)
-                .padding(.vertical, 15.0)
+                .frame(width: screenX, alignment: .bottomLeading)
+                .padding(.top, 60.0)
+                .padding(.bottom, 20)
                 .background(Color(hue: 1, saturation: 0.0, brightness: 0.95))
             
             HStack{
@@ -36,6 +37,8 @@ struct TopBar: View {
             }
             .frame(width: screenX, alignment: Alignment.trailing)
             .padding(.trailing, 30)
+            .padding(.top, 60)
+            .padding(.bottom, 20)
         }
 
 
@@ -44,6 +47,6 @@ struct TopBar: View {
 
 struct TopBar_Previews: PreviewProvider {
     static var previews: some View {
-        TopBar()
+        TopBar(title: "Главная")
     }
 }

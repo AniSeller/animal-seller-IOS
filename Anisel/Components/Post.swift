@@ -68,6 +68,6 @@ struct Post: View {
 
 struct Post_Previews: PreviewProvider {
     static var previews: some View {
-        Post(title: "Lena", info: AnimalInfo(breed: "British short hair cat", age: 1.5, gender: Gender.Female))
+        Post(title: "Вика", info: AnimalInfo(breed: "Сиамская кошка", age: 1.5, gender: Gender.Female))
     }
 }
