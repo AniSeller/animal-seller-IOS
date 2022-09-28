@@ -12,8 +12,8 @@ struct Post: View {
     var title : String;
     var info : AnimalInfo;
     var screenX = UIScreen.main.bounds.width;
-    var titleWidth = UIScreen.main.bounds.width - 180;
-    var subtitleWidth = UIScreen.main.bounds.width - 200;
+    var titleWidth = UIScreen.main.bounds.width - 205;
+    var subtitleWidth = UIScreen.main.bounds.width - 225;
     
     var body: some View {
         HStack{
@@ -26,9 +26,11 @@ struct Post: View {
                 VStack{
                     HStack{
                         Image("BreedIcon")
+
                         Text(info.breed)
                             .frame(width: subtitleWidth, alignment: Alignment.leading)
                             .multilineTextAlignment(TextAlignment.leading)
+                            .font(.custom("CaptionMain", size: 14))
                     }
                     .padding(.bottom, -2)
 
@@ -37,6 +39,7 @@ struct Post: View {
                         Text("Возраст: " + String(info.age) + " лет")
                             .frame(width: subtitleWidth, alignment: Alignment.leading)
                             .multilineTextAlignment(TextAlignment.leading)
+                            .font(.custom("CaptionMain", size: 14))
                     }
                     .padding(.vertical, -2)
                     
@@ -46,6 +49,7 @@ struct Post: View {
                         Text("Пол: " + (info.gender.rawValue == Gender.Male.rawValue ? "мальчик" : "девочка"))
                             .frame(width: subtitleWidth, alignment: Alignment.leading)
                             .multilineTextAlignment(TextAlignment.leading)
+                            .font(.custom("CaptionMain", size: 14))
                     }
                     .padding(.top, -2)
 
@@ -58,7 +62,7 @@ struct Post: View {
             }
             
             Rectangle()
-                .frame(width: 100, height: 145, alignment: Alignment.trailing)
+                .frame(width: 120, height: 145, alignment: Alignment.trailing)
                 .background(Color.green)
         }
         .background(Color(hue: 0.5, saturation: 0.0, brightness: 0.937))

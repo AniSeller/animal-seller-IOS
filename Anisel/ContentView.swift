@@ -18,8 +18,7 @@ struct ContentView: View {
     var body: some View {
             NavigationView{
                 MainPage()
-                    .frame(height: screenY , alignment: Alignment.top)
-
+                    .frame(height: screenY , alignment: Alignment.bottom)
             }
         }
 
